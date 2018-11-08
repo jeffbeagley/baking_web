@@ -21,17 +21,13 @@ const mutations = {
 
     record.quantity--;
 
-    console.log(state.added);
-
     if (record.quantity === 0) {
-        state.added.forEach((v, i) => {
-            if(v.id === record.id) {
-                state.added.splice(i, 1);
-            }
-
-        });
-
-    } 
+      state.added.forEach((v, i) => {
+        if (v.id === record.id) {
+          state.added.splice(i, 1);
+        }
+      });
+    }
   }
 };
 
