@@ -17,3 +17,24 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+
+.btn-primary {
+    background-color: #EBBAB9;
+    border-color: #ebb8b7;
+}
+
+.btn-primary:active {
+    background-color: #e5a5a4;
+    border-color: #ebb8b7;
+}
+
+.btn-primary:hover {
+    background-color: #dc8584;
+    border-color: #ebb8b7;
+}
+
+.alert-info {
+    background-color: #EBA080;
+    border-color: #f2c0ab;
+    color: #fff;
+}
