@@ -19,6 +19,7 @@ Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 Vue.use(BootstrapVue);
 
+
 router.beforeEach((to, from, next) => {
   document.title = to.meta.title;
   next();
