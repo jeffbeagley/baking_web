@@ -29,14 +29,14 @@ export default new Router({
       name: "Products",
       meta: { title: "Products" },
       component: () =>
-        import(/* webpackChunkName: "about" */ "./views/Products.vue")
+        import(/* webpackChunkName: "products" */ "./views/Products.vue")
     },
     {
       path: "/cart",
       name: "Cart",
       meta: { title: "Cart" },
       component: () =>
-        import(/* webpackChunkName: "about" */ "./views/Cart.vue")
+        import(/* webpackChunkName: "cart" */ "./views/Cart.vue")
     }
   ]
 });
