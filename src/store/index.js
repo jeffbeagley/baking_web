@@ -6,7 +6,7 @@ import swal from "sweetalert2";
 const toast = swal.mixin({
     toast: true,
     position: "top-end",
-    showConfirmButton: true,
+    showConfirmButton: false,
     timer: 2000
 });
 
@@ -28,7 +28,7 @@ const mutations = {
     toast({
         type: "success",
         title: "Item added to your cart"
-    })
+    });
 
   },
   [types.REMOVE_FROM_CART](state, { id }) {

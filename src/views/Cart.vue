@@ -1,9 +1,9 @@
 <template>
   <div class="cart">
-    <h1 class="title">Your Cart</h1>
+    <h1 class="title">Cart</h1>
     <p v-show="!products.length">
-      <i>Your cart is empty!</i>
-      <router-link to="/">Go shopping</router-link>
+      <b-alert variant="info" show>Your cart is currently empty</b-alert>
+      <router-link to="/products">Go shopping</router-link>
     </p>
     <table class="table is-striped" v-show="products.length">
       <thead>
@@ -19,7 +19,9 @@
             <td>{{ p.name }}</td>
             <td>${{ p.price }}</td>
             <td>{{ p.quantity }}</td>
-            <td><button class='button is-primary' @click='remove_item(p)'><font-awesome-icon icon="trash"/></button></td>
+            <td>
+                <b-button variant="primary" @click='remove_item(p)'><font-awesome-icon icon="trash"/> Remove</b-button>
+            </td>
           </tr>
           <tr>
             <td><b>Total:</b></td>
@@ -28,8 +30,10 @@
             <td></td>
           </tr>
       </tbody>
-</table>
-    <p><button v-show="products.length" class='button is-primary' @click='checkout'>Checkout</button></p>
+    </table>
+    <p>
+        <b-button v-show="products.length" variant="primary" @click='checkout'> Checkout</b-button>
+    </p>
   </div>
 </template>
 <script>
