@@ -1,5 +1,5 @@
 <template>
-    <b-navbar toggleable="md" type="dark" variant="info" fixed="top">
+    <b-navbar toggleable="md" type="light" fixed="top">
         <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
         <b-navbar-brand to="/">NavBar</b-navbar-brand>
@@ -11,7 +11,7 @@
                 <b-navbar-nav>
                 <b-nav-item to="/">Home</b-nav-item>
                 <b-nav-item to="/about">About</b-nav-item>
-                <b-nav-item to="/products">Products</b-nav-item>
+                <b-nav-item to="/products">Store</b-nav-item>
                 <b-nav-item to="/cart">Cart ({{itemsInCart}})</b-nav-item>
                 </b-navbar-nav>
 

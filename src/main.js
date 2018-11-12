@@ -8,6 +8,7 @@ import "bootstrap-vue/dist/bootstrap-vue.css";
 import "./assets/css/main.css";
 import "./assets/css/carousel.css";
 import "./assets/css/transitions.css";
+import "./assets/css/navbar.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faCoffee, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
