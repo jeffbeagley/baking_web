@@ -23,8 +23,8 @@
           </tr>
           <tr>
             <td><b>Total:</b></td>
-            <td></td>
             <td><b>${{ total }}</b></td>
+            <td><b>{{ totalQuantity }}</b></td>
             <td></td>
           </tr>
       </tbody>
@@ -44,6 +44,12 @@ export default {
       return this.products.reduce((total, p) => {
         return total + p.price * p.quantity
       }, 0)
+    },
+    totalQuantity () {
+      return this.products.reduce((quantity, p) => {
+        return quantity + p.quantity
+      }, 0)
+
     }
   },
   methods: mapActions([
