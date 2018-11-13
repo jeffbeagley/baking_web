@@ -12,6 +12,15 @@
                   <li><router-link to="/"><a href="#">Home</a></router-link></li>
                   <li><router-link to="/about"><a href="#">About</a></router-link></li>
                   <li><router-link to="/products"><a >Products</a></router-link></li>
+                    <li>
+                        <router-link to="/cart">
+                            Cart
+                            <span class="icon icon-shopping_cart"></span>
+                            <span class="count">{{itemsInCart}}</span>  
+                        </router-link>
+
+                    </li>
+
                 </ul>
               </div>
             </div>
