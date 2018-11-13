@@ -14,16 +14,13 @@
           <div class="col-md-6">
             <div class="block-16">
               <figure>
-                <img src="/static/images/blog_1.jpg" alt="Image placeholder" class="img-fluid rounded">
-                <a href="https://vimeo.com/channels/staffpicks/93951774" class="play-button popup-vimeo"><span class="ion-md-play"></span></a>
+                <img src="/static/images/kattee.jpg" alt="Image placeholder" class="img-fluid rounded">
 
               </figure>
             </div>
           </div>
           <div class="col-md-1"></div>
           <div class="col-md-5">
-            
-            
             <div class="site-section-heading pt-3 mb-4">
               <h2 class="text-black">About</h2>
             </div>
