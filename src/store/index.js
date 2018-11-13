@@ -1,14 +1,6 @@
 import Vue from "vue";
 import Vuex from "vuex";
 import * as types from "./mutation-types";
-import swal from "sweetalert2";
-
-const toast = swal.mixin({
-    toast: true,
-    position: "top-end",
-    showConfirmButton: false,
-    timer: 2000
-});
 
 Vue.use(Vuex);
 const debug = process.env.NODE_ENV !== "production";
@@ -24,12 +16,6 @@ const mutations = {
     } else {
       record.quantity++;
     }
-
-    toast({
-        type: "success",
-        title: "Item added to your cart"
-    });
-
   },
   [types.REMOVE_FROM_CART](state, { id }) {
     const record = state.added.find(p => p.id === id);
@@ -43,12 +29,6 @@ const mutations = {
         }
       });
     }
-
-    toast({
-        type: "success",
-        title: "Item removed successfully"
-    })
-
   }
 };
 

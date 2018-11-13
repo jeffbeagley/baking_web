@@ -5,20 +5,11 @@ import store from "./store/index.js";
 import BootstrapVue from "bootstrap-vue";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
-import "./assets/css/main.css";
-import "./assets/css/carousel.css";
-import "./assets/css/transitions.css";
-import "./assets/css/navbar.css";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { faCoffee, faTrash } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-library.add(faCoffee, faTrash);
-
-Vue.component("font-awesome-icon", FontAwesomeIcon);
+import "./assets/fonts/icomoon/style.css";
+import "./assets/css/style.css";
 
 Vue.use(BootstrapVue);
-
 
 router.beforeEach((to, from, next) => {
   document.title = to.meta.title;
