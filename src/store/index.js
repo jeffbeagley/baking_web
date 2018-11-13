@@ -73,7 +73,8 @@ const getters = {
         name: product.name,
         price: product.price,
         id: product.id,
-        quantity
+        quantity,
+        image_url: product.image_url
       };
     });
   }

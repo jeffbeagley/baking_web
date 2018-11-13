@@ -16,6 +16,7 @@
               <table class="table table-bordered">
                 <thead>
                   <tr>
+                    <th class="product-thumbnail">&nbsp;</th>
                     <th class="product-name">Product</th>
                     <th class="product-price">Price</th>
                     <th class="product-quantity">Quantity</th>
@@ -24,6 +25,7 @@
                 </thead>
                 <tbody>
                     <tr v-for="p in products" track-by="id">
+                        <td><img :src='p.image_url' alt="Image placeholder" class="img-fluid" /></td>
                         <td>{{ p.name }}</td>
                         <td>${{ p.price }}</td>
                         <td>{{ p.quantity }}</td>
