@@ -11,12 +11,12 @@ export default new Router({
       path: "/",
       name: "home",
       component: Home,
-      meta: { title: "home" }
+      meta: { title: "Gentle Baker" }
     },
     {
       path: "/about",
       name: "about",
-      meta: { title: "about page" },
+      meta: { title: "About the Baker | Kattee Smith" },
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
@@ -26,14 +26,14 @@ export default new Router({
     {
       path: "/products",
       name: "Products",
-      meta: { title: "Products" },
+      meta: { title: "Gentle Baker Current Products" },
       component: () =>
         import(/* webpackChunkName: "products" */ "./views/Products.vue")
     },
     {
       path: "/cart",
       name: "Cart",
-      meta: { title: "Cart" },
+      meta: { title: "Gentle Baker Shopping Cart" },
       component: () =>
         import(/* webpackChunkName: "cart" */ "./views/Cart.vue")
     }
