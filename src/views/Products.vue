@@ -6,7 +6,7 @@
           <div class="col-md-12 mb-0"><router-link to="/"><a href="#">Home</a></router-link> <span class="mx-2 mb-0">/</span> <strong class="text-black">Products</strong></div>
         </div>
       </div>
-    </div>  
+    </div>
 
     <div class="site-section">
       <div class="container">
@@ -38,13 +38,13 @@
 <script>
 import { mapGetters, mapActions } from 'vuex'
 export default {
-  name: 'app',
-  computed: mapGetters({
-    products: 'allProducts',
-    length: 'getNumberOfProducts'
-  }),
-  methods: mapActions([
-    'addToCart'
-  ])
+    name: 'app',
+    computed: mapGetters({
+        products: 'allProducts',
+        length: 'getNumberOfProducts'
+    }),
+    methods: mapActions([
+        'addToCart'
+    ])
 }
 </script>
