@@ -4,6 +4,7 @@ import router from './router.js'
 import store from './store/index.js'
 import BootstrapVue from 'bootstrap-vue'
 import Notifications from 'vue-notification'
+import VuexPersistence from 'vuex-persist'
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'

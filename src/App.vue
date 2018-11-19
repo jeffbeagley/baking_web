@@ -18,7 +18,7 @@ import FooterBar from './components/FooterBar'
 
 export default {
     name: 'app',
-        components: {
+    components: {
         NavBar,
         FooterBar
     },
@@ -27,4 +27,3 @@ export default {
     }
 }
 </script>
-

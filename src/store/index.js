@@ -1,9 +1,13 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-
+import VuexPersistence from 'vuex-persist'
 import * as types from './mutation-types'
 
 Vue.use(Vuex)
+
+const vuexLocal = new VuexPersistence({
+    storage: window.localStorage
+})
 
 const debug = process.env.NODE_ENV !== 'production'
 // mutations
@@ -44,7 +48,6 @@ const mutations = {
             text: `${name} successfully removed from your cart`,
             type: 'success'
         })
-
     }
 }
 
@@ -120,5 +123,6 @@ export default new Vuex.Store({
     strict: debug,
     getters,
     actions,
-    mutations
+    mutations,
+    plugins: [vuexLocal.plugin]
 })
