@@ -6,7 +6,7 @@
           <div class="col-md-12 mb-0"><router-link to="/"><a href="#">Home</a></router-link> <span class="mx-2 mb-0">/</span> <strong class="text-black">Cart</strong></div>
         </div>
       </div>
-    </div>  
+    </div>
 
     <div class="site-section">
       <div class="container">
@@ -76,7 +76,9 @@
 
                 <div class="row">
                   <div class="col-md-12">
-                    <button class="btn btn-primary btn-sm btn-block" onclick="window.location='checkout.html'">Proceed To Checkout</button>
+                    <router-link to="/checkout">
+                        <button class="btn btn-primary btn-sm btn-block">Proceed To Checkout</button>
+                    </router-link>
                   </div>
                 </div>
               </div>
@@ -91,25 +93,24 @@
 import { mapGetters, mapActions } from 'vuex'
 
 export default {
-  computed: {
-    ...mapGetters({
-      products: 'cartProducts'
-    }),
-    total () {
-      return this.products.reduce((total, p) => {
-        return total + p.price * p.quantity
-      }, 0)
+    computed: {
+        ...mapGetters({
+            products: 'cartProducts'
+        }),
+        total () {
+            return this.products.reduce((total, p) => {
+                return total + p.price * p.quantity
+            }, 0)
+        },
+        totalQuantity () {
+            return this.products.reduce((quantity, p) => {
+                return quantity + p.quantity
+            }, 0)
+        }
     },
-    totalQuantity () {
-      return this.products.reduce((quantity, p) => {
-        return quantity + p.quantity
-      }, 0)
-
-    }
-  },
-  methods: mapActions([
-    "remove_item",
-    "checkout"
-  ])
+    methods: mapActions([
+        'remove_item',
+        'checkout'
+    ])
 }
 </script>

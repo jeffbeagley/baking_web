@@ -57,26 +57,54 @@ const state = {
     all: [
         {
             id: 'cc919e21-ae5b-5e1f-d023-c40ee669520c',
-            name: 'COBOL 101 vintage',
-            description: 'Learn COBOL with this vintage programming book',
-            price: 399,
-            image_url: '/static/images/products/p1.jpg'
+            name: 'Cheese-less Cheesecake',
+            short_description: 'short desc for cheese cake',
+            description: 'cheese cake description',
+            price: 6,
+            image_url: '/static/images/products/p1.jpg',
+            options: [
+                {
+                    'title': 'Flavor',
+                    'options': [
+                        'Vanilla',
+                        'Cold Brew',
+                        'Strawberry',
+                        'Lemon',
+                        'Mint',
+                        'Chocolate',
+                        'Lavendar'
+                    ]
+
+                }
+            ]
         },
         {
             id: 'bcd755a6-9a19-94e1-0a5d-426c0303454f',
-            name: 'Sharp C2719 curved TV',
+            name: 'Quick Bread',
+            short_description: 'short desc',
             description:
         'Watch TV like never before with the brand new curved screen technology',
-            price: 1995,
+            price: 5,
             image_url: '/static/images/products/p2.jpg'
         },
         {
             id: '727026b7-7f2f-c5a0-ace9-cc227e686b8e',
-            name: 'Remmington X mechanical keyboard',
+            name: 'Marshmellow',
+            short_description: 'short desc',
             description:
         'Excellent for gaming and typing, this Remmington X keyboard ' +
         'features tactile, clicky switches for speed and accuracy',
-            price: 595,
+            price: 4,
+            image_url: '/static/images/products/p3.jpg'
+        },
+        {
+            id: '727026b7-7f2f-c5a0-ace9-cc227e686b8e',
+            name: 'Muesli',
+            short_description: 'short desc',
+            description:
+        'Excellent for gaming and typing, this Remmington X keyboard ' +
+        'features tactile, clicky switches for speed and accuracy',
+            price: 3,
             image_url: '/static/images/products/p3.jpg'
         }
     ]

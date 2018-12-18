@@ -11,8 +11,17 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import './assets/fonts/icomoon/style.css'
 import './assets/css/style.css'
 
+// Environment configuration
+if(process.env.NODE_ENV === 'production') {
+    window.endpoint = 'https://stickly.herokuapp.com'
+} else {
+    window.endpoint = 'http://localhost:9001/api'
+}
+
 Vue.use(BootstrapVue)
 Vue.use(Notifications)
+
+Vue.component('modal', { template: '#modal-template' })
 
 router.beforeEach((to, from, next) => {
     document.title = to.meta.title
